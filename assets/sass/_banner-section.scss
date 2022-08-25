@@ -1,0 +1,104 @@
+// banner section style start
+html {
+    body {
+        .banner {
+            .container-padding {
+                padding: 4rem 0 0;
+            }
+            .container {
+                .row {
+                    .col {
+                        .left, .right {
+                            img {
+                                width: 12rem;
+                                height: 20rem;
+                                opacity: .2;
+                                border-radius: 10rem;
+                            }
+                        }
+                        .center {
+                            position: relative;
+                            img {
+                                width: 17rem;
+                                height: 26rem;
+                                border-radius: 10rem;
+                                opacity: .5;
+                            }
+                            .over-text {
+                                position: absolute;
+                                text-align: center;
+                                top: -1rem;
+                                h1 {
+                                    font-size: 8rem;
+                                    line-height: 1;
+                                    font-family: $header-font-family;
+                                    color: $dark-pink-color;
+                                    text-transform: uppercase;
+    
+                                }
+                                h3 {
+                                    font-size: 2.3rem;
+                                    font-weight: 500;
+                                    text-transform: capitalize;
+                                    padding-bottom: 2rem;
+                                }
+                                .time {
+                                    p {
+                                        font-size: 1.2rem;
+                                        line-height: 1.5;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }  
+                }
+                .ground-circle {
+                    width: 70%;
+                    height: 12rem;
+                    border-radius: 50%;
+                    border: 1px solid rgba($color: $dark-pink-color, $alpha: .5);
+                    position: absolute;
+                    top: 18rem;
+                    transform: rotate(-25deg);
+                }
+                .arrow-btn {
+                    width: 10rem;
+                    font-size: 1rem;
+                    color: $dark-pink-color;
+                    background-color: $bg-color;
+                    text-transform: uppercase;
+                    padding: 3rem 0 8rem;
+                    .arrow {
+                        width: 8rem;
+                        height: 8rem;
+                        transform: rotate(180deg);
+                    
+                        &::before {
+                            top: -100%;
+                        }
+                        &::after {
+                            top: -100%;
+                            left: 48%;
+                        }
+                        &:hover::before, &:hover::after {
+                            margin-top: -4rem;
+                        }
+                        p {
+                            transform: rotate(180deg);
+                            position: absolute;
+                            top: 45%;
+                            left: 33%;
+                            background-color: $bg-color;
+                        }
+                    }
+                    &:hover .arrow::before, &:hover .arrow::after {
+                        margin-top: -4rem;
+                
+                    }
+                }
+            }
+        }
+    }
+}
+// banner section style end

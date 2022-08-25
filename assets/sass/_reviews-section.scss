@@ -1,0 +1,50 @@
+// reviews section style start
+html {
+    body {
+        .reviews-section {
+            .headline {
+                text-align: center;
+                .heading-circle {
+                    &::before {
+                        transform: rotate(-20deg);   
+                    }
+                }
+            }
+            .container {
+                .review-slider {
+                    .slides {
+                        .slide {
+                            img {
+                                width: 14rem;
+                                z-index: 0;                            
+                            }
+                            .circle {
+                                width: 25rem;
+                                height: 8rem;
+                                border: 1px solid $white;
+                                position: absolute;
+                                top: 4rem;
+                                transform: rotate(-20deg);
+                            }
+                            .text {
+                                width: 25rem;
+                                padding-top: 1rem;
+                                text-align: center;
+                            }
+                            .stars {
+                                color: $dark-pink-color;
+                                padding-top: 1rem;
+                            }
+                            &.swiper-slide-active{
+                                img {
+                                    width: 16rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// reviews section style end

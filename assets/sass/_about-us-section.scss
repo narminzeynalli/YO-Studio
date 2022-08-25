@@ -1,0 +1,25 @@
+// about us section style start
+html {
+    body {
+        .about-us-section {
+            .container {
+                .row {
+                    .col {
+                        .about-image {
+                            img {
+                                border-radius: 50% 50% 0 0;
+                            }
+                            .circle {
+                                width: 10rem;
+                                height: 10rem;
+                                margin-top: -5rem;
+                                margin-left: -20rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// about us section style end

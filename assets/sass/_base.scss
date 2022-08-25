@@ -1,0 +1,331 @@
+// common base styles start
+// POV: these styles are shared by more than one element
+
+* {
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	transition: all .3s ease;
+    object-fit: cover;
+}
+
+// ---------------------------------------
+// all headings line-height
+// ---------------------------------------
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.5;
+}
+
+// ---------------------------------------
+// common html style
+// ---------------------------------------
+html {
+	overflow-x: hidden;
+    background-color: $bg-color;
+    font-family: $text-font-family;
+    scroll-behavior: smooth;
+}
+
+// ---------------------------------------
+// main paddings
+// ---------------------------------------
+.title-padding {
+    padding-top: 2rem;
+}
+.container-padding {
+    padding: 6rem 0 8rem;
+}
+.section-padding {
+    padding: 4rem 0;
+}
+
+// ---------------------------------------
+// logo style
+// ---------------------------------------
+.logo {
+    font-family: $header-font-family;
+    text-transform: uppercase;
+    font-weight: bold;
+    // text-align: center;
+    a {
+        font-size: 3rem;
+        color: $dark-pink-color;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+// ---------------------------------------
+// title style
+// ---------------------------------------
+.title {
+    width: 30rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: $dark-pink-color;
+    font-family: $header-font-family;
+    text-transform: uppercase;
+}
+.title-circle {
+    position: relative;
+    &::before {
+        content: '';
+        width: 15rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: .1rem solid $line-bg-color;
+        position: absolute;
+        transform: rotate(20deg);
+
+    }
+}
+.title-line {
+    width: 60%;
+    height: 1px;
+    background-color: rgba($color: $dark-pink-color, $alpha: .5);
+}
+
+// ---------------------------------------
+// link style
+// ---------------------------------------
+.link {
+    font-size: .8rem;
+    color: $white;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px;
+
+    &:hover {
+        color: $dark-pink-color !important;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 0;
+        left: 0;
+        bottom: 0;
+        background-color: $dark-pink-color;
+        transition: width .3s ease;
+        border-radius: 50%;
+    }
+    &:hover::before{
+        width: 100%;
+    }
+}
+
+// ---------------------------------------
+// text style
+// ---------------------------------------
+.text {
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 300;
+    color: $white;
+}
+.pink-word {
+    color: $dark-pink-color;
+}
+
+// ---------------------------------------
+// sub title style
+// ---------------------------------------
+.sub-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $white;
+}
+
+// ------------------------------------------------------------------
+// common text-image section (about us and master-class) style
+// ------------------------------------------------------------------
+html {
+    body {
+        .text-image-section{
+            .container {
+                .row {
+                    .col {
+                        .about-image {
+                            img {
+                                width: 21rem;
+                                z-index: 3;
+                            }
+                            .circle {
+                                height: 10rem;
+                                border-radius: 50%;
+                                border: $border;
+                                z-index: 1;
+                            }
+                        }
+                        .text {
+                            p {
+                                width: 20rem;
+                                padding-bottom: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ---------------------------------------
+// button style
+// ---------------------------------------
+.btn {
+    padding: .8rem 2rem;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: $bg-color;
+    border: .1rem solid $bg-color;
+    border-radius: 10rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    &:hover {
+        background-color: $bg-color;
+        color: $dark-pink-color;
+    }
+}
+
+
+// ---------------------------------------
+// input style
+// ---------------------------------------
+.input {
+    width: 18rem;
+    height: 2rem;
+    font-size: .8rem;
+    line-height: 1rem;
+    font-weight: 500;
+    font-family: $text-font-family;
+    color: $bg-color;
+    background-color: transparent;
+    border-bottom: .1rem solid rgba($color: $bg-color, $alpha: .3);
+    margin: .5rem 0;
+
+    &::placeholder {
+        font-size: .8rem;
+        line-height: 1rem;
+        font-family: $text-font-family;
+        color: rgba($color: $bg-color, $alpha: .5);
+    }
+}
+
+// ---------------------------------------------------
+// common slider (wop and reviews slider) style
+// ---------------------------------------------------
+.slider {
+    .slides {
+        .slide {
+            height: 30rem;
+            img {
+                border-radius: 50%;
+                box-shadow: $box-shadow;
+            }
+            .circle {
+                border-radius: 50%;
+            }
+            &.swiper-slide-active{
+                font-size: 105%;
+                .d-none {
+                    display: initial !important;
+                }
+                
+            }
+        }
+    }
+    .swiper-button {
+        width: 25rem;
+        font-size: 3rem;
+        color: $dark-pink-color;
+        top: 95.5%;
+        z-index: 2;
+    }
+    .swiper-button::after {
+        display: none;
+    }
+    .swiper-pagination {
+        position: relative;
+        margin-top: 5rem;
+        z-index: 0;
+    }
+}
+
+// ---------------------------------------------------
+// selection style
+// ---------------------------------------------------
+::selection {
+    background-color: $light-pink-color;
+    color: $bg-color;
+}
+
+// ---------------------------------------------------
+// arrow style
+// ---------------------------------------------------
+.arrow-btn {
+
+    .arrow {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: $border;
+        position: relative;
+        transform: rotate(90deg);
+    
+        &::before {
+            content: '';
+            background-color: $dark-pink-color;
+            width: .1rem;
+            height: 5rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transition: margin 1s ease;
+        }
+        &::after {
+            content: '';
+            background-color: $dark-pink-color;
+            width: .1rem;
+            height: 1rem;
+            position: absolute;
+            transform: rotate(20deg);
+            top: 50%;
+            left: 45%;
+            transition: margin 1s ease;
+        }
+        &:hover::before, &:hover::after {
+            margin-top: -7rem;
+        }
+    }
+    &:hover .arrow::before, &:hover .arrow::after {
+        margin-top: -7rem;
+
+    }
+}
+
+// ---------------------------------------------------
+// scroll arrow button style
+// ---------------------------------------------------
+.scroll-arrow-btn {
+    z-index: 1000;
+    position: fixed;
+    bottom: 6rem;
+    right: 3rem;
+    .arrow-btn {
+        .arrow {
+            transform: rotate(0deg);
+            border: 1px solid $light-pink-color;
+            &::before {
+                background-color: $light-pink-color;
+            }
+            &::after {
+                background-color: $light-pink-color;
+            }
+        }
+    }
+}
+
+
+// common base styles end

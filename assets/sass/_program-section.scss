@@ -1,0 +1,25 @@
+// program section style start
+html {
+    body {
+        .program-section {
+            background: linear-gradient($bg-color 10%, transparent 80%, $bg-color), rgba($color: $bg-color, $alpha: .7) url('../img/program-bg-img.jpg') no-repeat center center / cover;
+            background-blend-mode: darken;
+            .container {
+                .row {
+                    .col {
+                        .left-col, .center-col, .right-col {
+                            border: .2rem solid $dark-pink-color;
+                        }
+                        .left-col {
+                            border-radius: 0 50% 50% 0;
+                        }
+                        .right-col {
+                            border-radius: 50% 0 0 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// program section style end

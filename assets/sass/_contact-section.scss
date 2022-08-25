@@ -1,0 +1,53 @@
+// contact section style start
+html {
+    body {
+        .contact-section {
+            .container {
+                .centered {
+                    .square {
+                        position: relative;
+                        .inner-div {
+                            .col {
+                                img {
+                                    width: 40rem;
+                                    border-radius: 5rem;
+                                }
+                                form {
+                                    label {
+                                        width: 18rem;
+                                    }
+                                    .input {
+                                        color: #ccc;
+                                        border-bottom: 1px solid #ccc;
+                                        &::placeholder {
+                                            color: #ccc;
+                                        }
+                                    }
+                                    .btn {
+                                        border: $border;
+                                        color: $dark-pink-color;
+                                        &:hover {
+                                            background-color: $dark-pink-color;
+                                            color: $bg-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &::before {
+                            content: '';
+                            width: 46rem;
+                            height: 36rem;
+                            border: 2px solid $dark-pink-color;
+                            position: absolute;
+                            left: 50%;
+                            transform: translate(-50%);
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// contact section style end

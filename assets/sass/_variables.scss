@@ -1,0 +1,25 @@
+// font-families
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'MakLight';
+    src: url('MAK.eot'); /* IE9 Compat Modes */
+    src: url('MAK.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('MAK.woff') format('woff'), /* Modern Browsers */
+         url('MAK.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+// variables
+$header-font-family: "MakLight", Georgia;
+$text-font-family: 'Montserrat', sans-serif;
+$dark-pink-color: #d59b78;
+$light-pink-color: #e5c69e;
+$bg-color: #161616;
+$white: #fff;
+$border: 1px solid $dark-pink-color;
+$box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$line-bg-color: rgba($color: $dark-pink-color, $alpha: .5);
+

@@ -1,0 +1,46 @@
+// registration section style start
+html {
+    body {
+        .registration-section {
+            .headline {
+                text-align: center;
+                .line {
+                    width: 50%;
+                }
+            }
+            .container {
+                .register-form {
+                    background-color: $light-pink-color;
+                    border-radius: 15rem;
+                    padding: 4rem;
+                    .time {
+                        color: $bg-color;
+                        p {
+                            font-size: 1.5rem;
+                            text-transform: capitalize;
+                            padding: .5rem 0;
+                            font-weight: 500;
+                        }
+                        h3 {
+                            font-size: 2rem;
+                            text-transform: uppercase;
+                            font-family: $header-font-family;
+                            padding-top: 1rem;
+                            font-weight: bold;
+                        }
+                    }
+                    form {
+                        padding-left: 2rem;
+                        border-left: .1rem solid rgba($color: $bg-color, $alpha: .5);
+                        label {
+                            width: 18rem;
+                            color: $bg-color;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// registration section style end

@@ -1,0 +1,56 @@
+// works of participations section style start
+html {
+    body {
+        .wop-section {
+            .headline {
+                text-align: center;
+                .heading-circle {
+                    &::before {
+                        transform: rotate(-20deg);   
+                    }
+                }
+            }
+            .paragraph {
+                padding-top: 3rem;
+                text-align: center;
+                .text {
+                    width: 15rem;
+                    color: $dark-pink-color;
+                    font-style: italic;
+                }
+            }
+            .container {
+                .wop-slider {
+                    .slides {
+                        .slide {
+                            img {
+                                width: 20rem;
+                                z-index: 2;
+                            }
+                            .circle {
+                                width: 10rem;
+                                height: 3rem;
+                                border: $border;
+                                z-index: 1;
+                                margin-top: -1rem;
+                            }
+                            .text {
+                                font-style: italic;
+                            }
+                            .text, .pink-word {
+                                padding-top: 1rem;
+                            }
+                            &.swiper-slide-active{
+                                img {
+                                    width: 24rem;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// works of participations section style end

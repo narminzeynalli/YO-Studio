@@ -1,0 +1,40 @@
+// about master-class section style start
+html {
+    body {
+        .master-class-section {
+            padding-bottom: 9rem;
+            .container {
+                .row {
+                    .col {
+                        .about-image {
+                            padding-top: 4rem;
+                            img {
+                                border-radius: 12rem;
+                            }
+                            .circle {
+                                width: 15rem;
+                                height: 10rem;
+                                margin-top: -32rem;
+                                margin-left: 10rem;
+                                transform: rotate(40deg);
+                                z-index: -1;
+                                position: absolute;
+                            }
+                        }
+                        .text-heading {
+                            .text {
+                                a {
+                                    width: 20rem;
+                                    font-size: 1rem;
+                                    color: $dark-pink-color;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// about master-class section style end

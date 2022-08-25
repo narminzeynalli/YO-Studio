@@ -1,0 +1,33 @@
+// footer section style start
+html {
+    body {
+        .footer {
+            background-color: $dark-pink-color;
+            .container {
+                .row {
+                    .col {
+                        .logo {
+                            a, h2 {
+                                color: $bg-color;
+                            }
+                        }
+                        .links {
+                            .link {
+                                font-size: .8rem;
+                                font-weight: 400;
+                                text-transform: capitalize;
+                                &:hover {
+                                    color: $bg-color !important;
+                                }
+                                &::before {
+                                    background-color: $bg-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// footer section style end

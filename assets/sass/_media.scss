@@ -1,0 +1,238 @@
+// media quaries start
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 90%; 
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 80%;
+        
+        body {
+            .program-section {
+                .container {
+                    .row {
+                        .col {
+                            .left-col, .center-col, .right-col {
+                                border-radius: 10rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-section {
+                img {
+                    width: 28rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 70%; 
+        body {
+            .registration-section {
+                .container-padding {
+                    padding-left: 8rem;
+                    padding-right: 8rem;
+                }
+                .container {
+                    .register-form {
+                        padding: 5rem 0;
+                        border-radius: 50% 50% 0 0;
+                        text-align: center;
+                        .time {
+                            align-items: center !important;
+                        }
+                        form {
+                            align-items: center !important;
+                            border: none;
+                            padding: 2rem 0;
+                        }
+                    }
+                }
+            }
+
+            .contact-section {
+                .container {
+                    .centered {
+                        .square {
+                            position: relative;
+                            .inner-div {
+                                align-items: center !important;
+                                justify-content: center;
+                                div {
+                                    padding: 1rem 0;
+                                }
+                                .col {
+                                    justify-content: center !important;
+                                    img {
+                                        width: 35rem !important;
+                                        border-radius: 0;
+                                    }
+                                }
+                                .contact-info {
+                                    width: 35rem;
+                                }
+                            }
+                            &::before {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about-us-section {
+                .container {
+                    .row {
+                        .col {
+                            justify-content: center;
+                            .about-image {
+                                img {
+                                    width: 35rem;
+                                    height: 25rem;
+                                    border-radius: 0;
+                                    object-position: top;
+                                }
+                                .circle {
+                                    display: none;
+                                }
+                            }
+                            .text {
+                                p {
+                                    width: 35rem;
+                                    padding-bottom: 2rem;
+                                }
+                            }
+                            .text-heading {
+                                padding-top: 4rem;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .master-class-section {
+                .container {
+                    .row {
+                        .col {
+                            justify-content: center !important;
+                            .about-image {
+                                img {
+                                    width: 35rem;
+                                    height: 25rem;
+                                    border-radius: 0;
+                                    object-position: top;
+                                }
+                                .circle {
+                                    display: none;
+                                }
+                            }
+                            .text-heading {
+                                .text {
+                                    p {
+                                        width: 35rem;
+                                    }
+                                    a {
+                                        font-size: 1rem;
+                                        color: $dark-pink-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-padding {
+        padding: 4rem 2rem 10rem;
+    }
+    .section-padding {
+        padding: 5rem 0;
+    }
+    html {
+        font-size: 60%; 
+        body {
+            .header {
+                .container {
+                    .navbar {
+                        .menu {
+                            display: none !important;
+                        }
+                        .responsive-menu {
+                            display: flex !important;
+                            align-items: center !important;
+                            justify-content: space-evenly !important;
+                            flex-direction: column;
+                            width: 100%;
+                            height: 85vh;
+                            position: absolute;
+                            right: 0;
+                            top: 15vh;
+                            left: 0;
+                            background-color: $bg-color;
+                            transition: clip-path .3s linear;
+                            z-index: 1000;
+                            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                            .menu-item {
+                                display: block;
+                            }
+                            &.active {
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                            }
+                        }
+                        .fa-bars {
+                            display: initial !important;
+                            &.fa-times {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .banner {
+                .container {
+                    .row {
+                        .col {
+                            .left, .right {
+                                img {
+                                    display: none;
+                                }
+                            }
+                            .center {
+                                img {
+                                    width: 20rem;
+                                    height: 30rem;
+                                }
+                            }
+                        }
+                    }
+                    .ground-circle {
+                        top: 23rem;
+                    }
+                    .arrow-btn {
+                        padding: 7rem 0 20rem;
+                    }
+                }
+            }
+
+            .wop-section {
+                .container-padding {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+// media quaries end
